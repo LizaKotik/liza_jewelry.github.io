@@ -93,6 +93,8 @@ body {
 .header .container {
     display: flex;
     align-items: center;
+    background:50%;
+    background-size: contain;
 }
 
 .logo img{
