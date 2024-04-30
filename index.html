@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин украшений</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Dela+Gothic+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prosto+One&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="main">
+        <header class="header">
+            <div class="container">
+
+                <div class="logo">
+                    <img src="images/logo_butterfly.jpg" alt="Logo" width="100%">
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <!-- <li class="menu-item">
+                            <a data-link="why">Почему мы?</a>
+                        </li> -->
+                        <li class="menu-item">
+                            <a data-link="products">Каталог</a>
+                        </li>
+                        <!-- <li class="menu-item">
+                            <a data-link="order">Оформление заказа</a>
+                        </li> -->
+                        <li class="menu-item">
+                            <a data-link="basket" href="basket.html">Корзина</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="currency" title="Изменить валюту" id="change-currency">₽</div>
+                <!-- <div class="pagination-info"> -->
+                    <!-- <span> -->
+                        <!-- Валюта
+                        <select name="per-page" class="per-page-btn">
+                            <option>Рубли</option>
+                            <option selected>$</option>
+                            <option>Евро</option> -->
+                            <!-- <option>20</option>
+                            <option>25</option>
+                            <option>50</option>
+                            <option>100</option> -->
+                        <!-- </select> -->
+                    <!-- </span> -->
+                    <!-- <span class="current-interval-info">
+                        Показаны записи с <span class="current-interval-start">1</span> по <span class="current-interval-end">10</span> из <span class="total-count">190</span>
+                    </span> -->
+                <!-- </div> -->
+
+            </div>
+        </header>
+
+        <section class="main-content">
+            <div class="container">
+                <div class="main-info">
+                    <span class="main-small-info">Новинки</span>
+                    <h1 class="main-title">Наши украшения</h1>
+                    <p class="main-text">Мы обновили наш каталог, спешите выбирать сезонные новинки и насладиться
+                        отличным выбором для ваших образов.</p>
+                    <div class="main-action">
+                        <button class="button" id="main-action-button">Смотреть товары</button>
+                    </div>
+                </div>
+                <!-- <img src="images/main_burger.png" alt="Big Burger" class="main-image"> -->
+            </div>
+        </section>
+    </section>
+
+    <!-- <section class="why" id="why">
+        <div class="container">
+            <div class="why-title common-title">почему нас выбирают </div>
+            <div class="why-items">
+                <div class="why-item"><img src="images/burger.png" alt="burger" class="why-item-image">
+                    <div class="why-item-title">Авторские рецепты</div>
+                    <div class="why-item-text">Наши бургеры обладают уникальным сочетанием вкусов и не похожи
+                        ни на какие
+                        другие. Мы тщательно отбираем лучшие ингредиенты и сочетания вкусов для нашего меню.</div>
+                </div>
+                <div class="why-item"><img src="images/meat.png" alt="meat" class="why-item-image">
+                    <div class="why-item-title">Мраморная говядина</div>
+                    <div class="why-item-text">Для наших бургеров мы используем отборную 100% мраморную говядину,
+                        которую
+                        закупаем исключительно у фермеров. Мы уверены в качестве нашего мяса.</div>
+                </div>
+                <div class="why-item"><img src="images/truck.png" alt="truck" class="why-item-image">
+                    <div class="why-item-title">Быстрая доставка</div>
+                    <div class="why-item-text">Мы доставляем в пределах МКАД за 30 минут, а если не успеем — доставка
+                        бесплатно. Мы тщательно упаковываем наши бургеры, чтобы по дороге они не остыли.</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="products" id="products">
+        <div class="container">
+            <div class="products-title common-title">Выберите своё украшение</div>
+            <div class="products-items">
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/bracelet2.jpg" alt="Jewelry 1"></div>
+                    <div class="products-item-title">Браслет цепь с бабочкой</div>
+                    <div class="products-item-text">Металлический браслет цепь с бабочкой в золотом цвете</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="1690">1690₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                            <!-- <button class="button" id="go-to-basket">В корзину</button> -->
+                            <!-- <button class="btn-ens-action btn-ens-style" id="go-to-basket" data-rel="4a9f99dc105">
+                                В корзину
+                            </button> -->
+                            <button class="btn" id="go-to-basket"><i class="fa fa-shopping-cart"></i>
+                                В корзину
+                            </button>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <!-- вот этот path рисует корзину после слова заказать -->
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/bears_pink.jpg" alt="Jewelry 2"></div>
+                    <div class="products-item-title">Миниатюрные сережки мармеладные мишки</div>
+                    <div class="products-item-text">Розовые сережки мармеладные мишки, классическая застежка сзади</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="690">690₽</div>
+                            <div class="products-item-weight">15 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/bears_blue.jpg" alt="Jewelry 3"></div>
+                    <div class="products-item-title">Миниатюрные сережки мармеладные мишки</div>
+                    <div class="products-item-text">Голубые сережки мармеладные мишки, классическая застежка сзади</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="690">690₽</div>
+                            <div class="products-item-weight">15 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/earrings_heart.jpg" alt="Jewelry 4"></div>
+                    <div class="products-item-title">Серьги "сердца-бублики" с жемчужинами</div>
+
+                    <div class="products-item-text">Серьги выполнены из металла, на стандартной застежке, упакованы в подарочную 
+                        коробочку с бантиком, при желании можно выбрать упаковку</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="790">790₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/butterfly_fairy.jpg" alt="Jewelry 5"></div>
+                    <div class="products-item-title">Серьги-бабочки "порхай"</div>
+                    <div class="products-item-text">Серьги-бабочки "порхай" перенесутвас в любимую сказку детства. Попробуй ощутить 
+                        себя главной героиней и порхай как эти сказочные бабочки</div>
+                        <a href="butterfly_fairy.html" color="#FA8072">Перейти</a>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="1479">1479₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/hearts.jpg" alt="Jewelry 6"></div>
+                    <div class="products-item-title">Серьги сердечки-бублики мини</div>
+                    <div class="products-item-text">Миниатюрные серёжки в виде бубликов, напоминающие по форме сердечки</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="890">890₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/geometry.jpg" alt="Jewelry 7"></div>
+                    <div class="products-item-title">Серьги "Геометрия"</div>
+                    <div class="products-item-text">Серьги в виде геометрических фигур</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="1290">1290₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/pearls2.jpg" alt="Jewelry 8"></div>
+                    <div class="products-item-title">Серьги-жемчужины</div>
+                    <div class="products-item-text">Миниатюрные серьги с жемчужинами</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="790">790₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/jew9.jpg" alt="Jewelry 9"></div>
+                    <div class="products-item-title">серьги</div>
+                    <div class="products-item-text">заполнить карточку</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="1190">1190₽</div>
+                            <div class="products-item-weight">40 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/jew10.jpg" alt="Jewelry 10"></div>
+                    <div class="products-item-title">колье</div>
+                    <div class="products-item-text">описание</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="990">990₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/jew11.jpg" alt="Jewelry 11"></div>
+                    <div class="products-item-title">браслеты мб набор</div>
+                    <div class="products-item-text">заполнить описание</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="590">590₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-item">
+                    <div class="products-item-image"><img src="images/jew12.jpg" alt="Jewelry 12"></div>
+                    <div class="products-item-title">серьги</div>
+                    <div class="products-item-text">написать текст описание фото</div>
+                    <div class="products-item-extra">
+                        <div class="products-item-info">
+                            <div class="products-item-price" data-base-price="990">990₽</div>
+                            <div class="products-item-weight">30 гр.</div>
+                        </div>
+                        <div class="products-item-action">
+                            <button class="button product-button">
+                                <span>Заказать</span>
+                                <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                                            fill="#191411" />
+                                    </svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order" id="order">
+        <div class="container">
+            <div class="order-title common-title">Оформление заказа</div>
+            <!-- <img src="images/inbox.jpg" width="30%" alt="order in the box" class="order-image"> -->
+            <!-- <img src="images/order.png" width="15%" position="top left" class="order-image"> -->
+
+
+
+            <div class="order-form">
+                <div class="order-form-text">Заполните все данные и наш менеджер свяжется с вами для подтверждения
+                    заказа</div>
+                <div class="order-form-inputs">
+
+                    <div class="order-form-input">
+                        <input type="text" placeholder="Ваш заказ" id="burger">
+                    </div>
+
+                    <div class="order-form-input">
+                        <input type="text" placeholder="Ваше имя" id="name">
+                    </div>
+
+                    <div class="order-form-input">
+                        <input type="text" placeholder="Номер телефона" id="phone">
+                    </div>
+
+                    <div class="order-form-input">
+                        <input type="text" placeholder="Почта для связи" id="email">
+                    </div>
+
+                    <button class="button" id="order-action">Оформить заказ</button>
+              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="logo">
+                <img src="images/logo_butterfly.jpg" alt="Logo">
+            </div>
+
+            <div class="rights">Все права защищены</div>
+
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
