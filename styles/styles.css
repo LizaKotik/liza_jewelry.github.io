@@ -13,6 +13,8 @@
     src: url("../fonts/Merriweather-Black.ttf");
 }
 
+input, textarea {max-width:100%}
+
 body {
     background-color: #909695;
     background-image: url(../images/Vector1.png);
